@@ -1,0 +1,11 @@
+listenPort: 8088
+callbackURL: /callback
+discord:
+    username: Bridge Bot
+    token: "your_discord_token"
+    guild: 'your_discord_guild_id'
+    channel: 'your_discord_channel_id'
+groupme:
+    name: "Discord Bridge"
+    botId: "your_groupme_bot_id"
+    accessToken: "your_groupme_access_token"
