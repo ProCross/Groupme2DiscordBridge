@@ -3,7 +3,6 @@ const path = require("path");
 const request = require("request-promise");
 const { v1: uuidv1 } = require("uuid");
 const os = require("os");
-const fileType = require("file-type");
 
 const TEMP_DIR = path.join(os.tmpdir(), "groupme-discord-bridge");
 
@@ -23,6 +22,7 @@ function getMimeType(filename) {
 
 async function detectFileType(filePath) {
     const fileBuffer = await fs.promises.readFile(filePath);
+    const fileType = await import('file-type');
     const type = await fileType.fromBuffer(fileBuffer);
     return type;
 }
