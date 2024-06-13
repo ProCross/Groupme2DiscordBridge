@@ -1,0 +1,32 @@
+{
+  "name": "groupme-discord-bridge",
+  "version": "0.0.1",
+  "description": "A Bridge Bot Linking GroupMe and Discord Messages",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProCross/Groupme2DiscordBridge.git"
+  },
+  "author": "ProCross",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ProCross/groupme-discord-bridge/issues"
+  },
+  "homepage": "https://github.com/ProCross/Groupme2DiscordBridge#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "discord.js": "^14.15.2",
+    "express": "^4.19.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^9.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
